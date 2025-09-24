@@ -4,12 +4,16 @@ body {
     padding: 0;
 }
 
+/* SIDEBAR: 20% of page; OTHER: 80% of page */
+
 /* Sidebar */
 .sidebar {
     position: fixed;
     top: 0;
     left: 0;
     width: 20%;
+    min-width: 100px;
+    max-width: 200px;
     height: 100%;
     background-color: #CEE1EB;
     padding-top: 20px;
@@ -19,10 +23,36 @@ body {
 .sidebar a {
     display: block;
     color: black;
-    padding: 10px 20px;
+    padding: 10px 10px;
     text-decoration: none; /* remove link underlines */ 
 }
 /* make area gray when hovered */
 .sidebar a:hover {
     background-color: #D1DBE8;
+}
+ 
+/* Footer */
+footer {
+    margin-left: 20%;          /* align with main content */
+    margin-left: min(200px, 20%); /* align with main content */
+    margin-left: max(100px, 20%); /* align with main content */
+    width: 80%;
+    color: black;
+    padding: 10px 10px;
+    position: relative;        /* not fixed, scrolls with content */
+}
+
+/* Body */
+main {
+    margin-left: 20%;          /* align with main content */
+    margin-left: min(200px, 20%); /* align with main content */
+    margin-left: max(100px, 20%); /* align with main content */
+    width: 80%;
+    color: black;
+    padding: 10px 10px;
+    position: relative;        /* not fixed, scrolls with content */
+
+    h2{
+        text-align: center;
+    }
 }
