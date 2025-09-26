@@ -70,3 +70,11 @@ td, th {
     padding: 8px;
 }
 
+img{
+    display: flex;
+    justify-content: center; /* center horizontally */
+    align-items: center;     /* center vertically */
+    max-width: 90%; /* scale down to fit parent width */
+    height: auto;    /* maintain aspect ratio */
+}
+
