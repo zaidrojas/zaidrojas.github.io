@@ -70,7 +70,7 @@ td, th {
     padding: 8px;
 }
 
-img{
+img, video{
     display: flex;
     justify-content: center; /* center horizontally */
     align-items: center;     /* center vertically */
