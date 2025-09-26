@@ -54,10 +54,9 @@ main {
     color: black;
     padding: 10px 10px;
     position: relative;        /* not fixed, scrolls with content */
-
-    h2{
-        text-align: center;
-    }
+}
+h2{
+    text-align: center;
 }
 
 table {
