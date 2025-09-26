@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Public vs Private Use</title>
+    <title>PublicAndPrivate</title>
     <!-- style sheet -->
     <link rel="stylesheet" href="main.css">
     <!-- bootstrap -->
@@ -44,11 +44,51 @@
 
 <!-- Header Section-->
 <main>
-    <h2>Header</h2>
-    <p>
-        Text
-        Text
-    </p>
+    <h2>Public vs Private Use</h2>
+    <table>
+        <!-- The Headers -->
+        <tr>
+            <th style="width:5%">Aspects</th>
+            <th style="width:20%">Public Use</th>
+            <th style="width:20%">Private Use</th>  
+        </tr>
+
+        <tr>
+            <!-- Visibility Row -->
+            <td>Visibility</td>
+            <td>Listed on the Chrome Web Store, searchable by anyone.</td>
+            <td>Only visible to users you allow (via G Suite domain or direct install link). Not searchable publicly.</td>
+        </tr>
+
+        <tr>
+            <!-- Audience Row -->
+            <td>Audience</td>
+            <td>Anyone with Chrome can install it.</td>
+            <td>Limited: only your organization (if using Google Workspace) or individuals with the install link.</td>
+        </tr>
+
+        <tr>
+            <!-- Use Case Row -->
+            <td>Use Case</td>
+            <td>Sharing tools with the general public (ad blockers, productivity tools, themes, etc.).</td>
+            <td>Internal tools for your company, school, or personal projects you don't want publicly accessible.</td>
+        </tr>
+
+        <tr>
+            <!-- Updating -->
+            <td>Updating</td>
+            <td>Auto-updates for all users once you push a new version to the Web Store.</td>
+            <td>Same update mechanism, but only affects your private audience.</td>
+        </tr>
+
+        <tr>
+            <!-- Distribution-->
+            <td>Distribution</td>
+            <td>Anyone can install directly from the Chrome Web Store listing page.</td>
+            <td>Install via direct link, domain publishing, or local install in Developer Mode.</td>
+        </tr>
+
+    </table>
 
     <!-- next page button-->
     <div class="d-flex justify-content-end"> <!-- align the button itself (not the text)-->
